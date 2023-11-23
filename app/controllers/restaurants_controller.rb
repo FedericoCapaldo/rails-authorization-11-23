@@ -19,6 +19,7 @@ class RestaurantsController < ApplicationController
 
   # GET /restaurants/1/edit
   def edit
+    authorize @restaurant
   end
 
   # POST /restaurants or /restaurants.json
