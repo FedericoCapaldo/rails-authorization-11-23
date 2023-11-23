@@ -25,4 +25,8 @@ class RestaurantPolicy < ApplicationPolicy
   def update?
     return user.id == record.user_id
   end
+
+  def destroy?
+    user == record.user
+  end
 end
